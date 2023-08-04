@@ -1131,7 +1131,7 @@
 				{
 					"name": "Dazing Spores (3/Day)",
 					"entries": [
-						"Kinoko ejects spores at one creature it can see within 5 feet of it. The target must succeed on a {@dc 13} Constitution saving throw or be dazed for 1 minute (as if affected by the {@spell daze|AelCamp} spell). The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+						"Kinoko ejects spores at one creature it can see within 5 feet of it. The target must succeed on a {@dc 13} Constitution saving throw or be {@condition dazed|AelCamp} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
 					]
 				},
 				{

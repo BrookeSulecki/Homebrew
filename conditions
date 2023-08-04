@@ -2,9 +2,9 @@
 	"_meta": {
 		"sources": [
 			{
-				"json": "DazedCon",
-				"abbreviation": "Dz",
-				"full": "DazedCondition",
+				"json": "AelithCampaign",
+				"abbreviation": "AelCamp",
+				"full": "Aelith Campaign",
 				"authors": [
 					"BrookeSulecki"
 				],

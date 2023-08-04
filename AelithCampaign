@@ -1216,12 +1216,22 @@
 			"source": "AelithCampaign",
 			"page": 0,
 			"type": "DR",
-			"rarity": "common",
+			"rarity": "none",
 			"entries": [
+				"{@b{@i Delivery.}} Inhalation",
+				"{@b{@i Price.}} 6 gp",
+				"{@b{@i DC.}} 8",
+				"{@b{@i Tools.}} ---",
+				"{@b{@i Duration.}} 5 hours (L)",
+				"{@b{@i Ingredients.}} Riverfern leaves (found alongside streams), flame",
 				"The sturdy leaves of the Riverfern plant are dried and rolled for smoking, not dissimilar to tobacco.",
 				"{@b{@i Side Effect.}} Causes drowsyness and indolence.",
 				"{@b{@i Effect.}} For the duration, the user has disadvantage on Intelligence and Wisdom skill checks and saving throws and has advantage on Strength and Constitution skill checks and saving throws."
-			]
+			],
+			"tier": "minor",
+			"poisonTypes": "inhaled",
+			"value": 600,
+			"weight": 0.10
 		}
 	]
 }

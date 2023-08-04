@@ -1185,6 +1185,85 @@
 			"isNpc": true
 		}
 	],
+	"spell": [
+		{
+			"name": "Daze",
+			"level": 1,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "TCE"
+					},
+					{
+						"name": "Bard",
+						"source": "PHB"
+					},
+					{
+						"name": "Druid",
+						"source": "PHB"
+					},
+					{
+						"name": "Ranger",
+						"source": "PHB"
+					},
+					{
+						"name": "Sorcerer",
+						"source": "PHB"
+					},
+					{
+						"name": "Warlock",
+						"source": "PHB"
+					}
+				]
+			},
+			"entries": [
+				"You transfer weary, negative energy from your person to a target creature. The target is under the  special dazed condition for the duration, where the following are in effect for the dazed target:",
+				"• You cannot take reactions",
+				"• You have disadvantage on ability checks and Dexterity saving throws.",
+				"• Melee attacks targeting you have advantage, and your own attacks have disadvantage.",
+				"• When you attempt to cast a spell other than a cantrip you must succeed on a DC 13 Constitution saving throw or the spell fizzles out, and the spell slot is wasted.",
+				"• When you move up to your walking speed you must succeed on DC 13 Dexterity saving throw or fall {@condition prone}."
+			],
+			"source": "AelithCampaign",
+			"components": {
+				"s": true
+			},
+			"spellAttack": [
+				"O"
+			],
+			"savingThrow": [
+				"dexterity",
+				"constitution"
+			]
+		}
+	],
 	"condition": [
 		{
 			"name": "Dazed",

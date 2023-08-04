@@ -20,7 +20,7 @@
     "condition": [
         {
             "name": "Dazed",
-            "source": "DazedCon",
+            "source": "AelithCampaign",
             "page": 0,
             "entries": [
                 {

@@ -1215,7 +1215,10 @@
 			"name": "Devilweed",
 			"source": "AelithCampaign",
 			"page": 0,
-			"type": "DR",
+			"type": [
+				"DR",
+				"OTH"
+			],
 			"rarity": "none",
 			"entries": [
 				"{@b{@i Delivery.}} Inhalation",

@@ -1,0 +1,1207 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "AelithCampaign",
+				"abbreviation": "AelCamp",
+				"full": "Aelith Campaign",
+				"url": "",
+				"authors": [
+					"BrookeSulecki"
+				],
+				"convertedBy": [],
+				"color": "#e821cd"
+			},
+			{
+				"json": "AelithCampaign",
+				"abbreviation": "AelCamp",
+				"full": "Aelith Campaign",
+				"authors": [
+					"BrookeSulecki"
+				],
+				"version": "1.0",
+				"url": "",
+				"targetSchema": "1.0"
+			}
+		],
+		"dateAdded": 0,
+		"dateLastModified": 0
+	},
+	"monster": [
+		{
+			"name": "Dream Shepherd",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"note": "(any race)"
+			},
+			"source": "AelithCampaign",
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"NY",
+				"E"
+			],
+			"ac": [
+				10,
+				{
+					"ac": 15,
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"formula": "16d8 + 16",
+				"average": 88
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 13,
+			"int": 18,
+			"wis": 13,
+			"cha": 11,
+			"passive": 11,
+			"cr": "4",
+			"shortName": "Shepherd",
+			"languages": [
+				"Common and one other language"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"skill": {
+				"arcana": "+6",
+				"deception": "+2",
+				"persuasion": "+2",
+				"religion": "+6"
+			},
+			"trait": [
+				{
+					"name": "Dark Devotion",
+					"entries": [
+						"The shepherd has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The shepherd casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 15}):"
+					],
+					"will": [
+						"{@spell light}"
+					],
+					"daily": {
+						"3": [
+							"{@spell dominate person}",
+							"{@spell dream}",
+							"{@spell greater invisibility}"
+						],
+						"3e": [
+							"{@spell detect thoughts}",
+							"{@spell disguise self}",
+							"{@spell hold person}",
+							"{@spell mage armor}",
+							"{@spell shield}",
+							"{@spell suggestion}"
+						],
+						"2e": [
+							"{@spell blur}",
+							"{@spell counterspell}",
+							"{@spell crown of madness}",
+							"{@spell fear}",
+							"{@spell locate creature}",
+							"{@spell misty step}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTagsSpell": [
+				"Y"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The shepherd makes two shortsword attacks."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit +6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Dazed Slumber {@recharge 5}",
+					"entries": [
+						"The shepherd invokes a magical slumber unto others by pointing at at two targets within 60 feet that they can see. Those creatures must make {@dc 16} Constitution saving throws. On a failed save, an affected creature falls {@condition prone}, and must make another {@dc 16} Constitution saving throw at the end of its next turn. If an affected creature fails the saving throw at the end of their turn, they fall {@condition unconscious} for 1 minute or until they take damage or someone uses an action to wake them.",
+						"Elves and creatures immune to being {@condition charmed} have advantage on saving throws to avoid this effect."
+					]
+				},
+				{
+					"name": "Psychic Invasion",
+					"entries": [
+						"{@atk rs} {@hit +7} to hit, reach 120 ft., one target. {@h}11 ({@damage 3d6 + 2}) psychic damage. On a successful hit, the target must immediately take their reaction to make a {@dc 16} Wisdom saving throw. On a fail, the target becomes {@condition frightened} for 1 minute."
+					]
+				}
+			],
+			"damageTags": [
+				"P",
+				"Y"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"environment": [
+				"coastal",
+				"desert",
+				"underdark",
+				"urban"
+			],
+			"tokenUrl": "https://cdna.artstation.com/p/assets/images/images/030/581/440/large/aaron-nakahara-dashaercultist2020-c1.jpg?1601029252",
+			"fluff": {
+				"entries": [
+					"The Soul Shepherds is an occult secret society or cult that operates within Meridian and the whole of the Nadir Wilds. Their goal is to ascend Lord Suundar to the position of Nightmare Lord, ruler over the domain of the Nightmare Realm, ushering in a new age of rule over Aelith. The demi-god figure would be the viceroy of a fourth moon, Phantaul, discovered by the group’s ringleader, Azir Bordraanas. They covertly send arcane agents out to manipulate the dreams of Meridian’s citizens, growing Lord Suundar’s influence and power in the Nightmare Realm."
+				]
+			},
+			"save": {
+				"int": "+6"
+			},
+			"conditionInflict": [
+				"frightened"
+			]
+		},
+		{
+			"name": "Ethelmein",
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "humanoid",
+				"note": "(gnome)"
+			},
+			"source": "AelithCampaign",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item padded armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d6 + 14",
+				"average": 38
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 14,
+			"int": 16,
+			"wis": 9,
+			"cha": 8,
+			"passive": 9,
+			"cr": "3",
+			"shortName": true,
+			"languages": [
+				"Common",
+				"Gnomish"
+			],
+			"languageTags": [
+				"C",
+				"G"
+			],
+			"save": {
+				"con": "+4",
+				"int": "+5"
+			},
+			"skill": {
+				"medicine": "+1",
+				"sleight of hand": "+4"
+			},
+			"resist": [
+				"poison"
+			],
+			"trait": [
+				{
+					"name": "Seasoned Smoker",
+					"entries": [
+						"When Ethelmein casts an artificer spell, he can add +3 to the damage inflicted, so long as it is acid, fire, necrotic, or poison damage. His spells that fit this criteria are marked with an asterisk ( * )."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Ethelmein casts one of the following spells, using Intelligence as the spellcasting ability (spell save {@dc 13}):"
+					],
+					"will": [
+						"*{@spell acid splash}",
+						"*{@spell poison spray} (both 5th level)"
+					],
+					"daily": {
+						"1": [
+							"{@spell enhance ability}",
+							"{@spell invisibility}",
+							"*{@spell Melf's acid arrow}"
+						],
+						"2e": [
+							"*{@spell absorb elements|XGE}",
+							"*{@spell ray of sickness}",
+							"{@spell false life}",
+							"{@spell longstrider}",
+							"*{@spell Tasha's caustic brew|TCE}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTagsSpell": [
+				"A",
+				"I"
+			],
+			"action": [
+				{
+					"name": "Light Hammer",
+					"entries": [
+						"{@atk mw,rw} {@hit +5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Experimental Strain (4/Day)",
+					"entries": [
+						"Ethelmein uses his smoking pipe to administer an experimental strain of drug to himself or a creature he can see within 15 feet of him, rolling {@dice 1d6} to determine the random effect on the target:",
+						"<i>1: Healing.</i> The target regains {@dice 2d4 + 3} hit points.",
+						"<i>2: Swiftness.</i> The target's walking speed increases by 10 feet for 1 hour.",
+						"<i>3: Resilience.</i> The target gains a +1 bonus to their AC for 10 minutes.",
+						"<i>4: Boldness.</i> The target can roll a {@dice d4} and add the number rolled to every attack roll and saving throw they make for the next minute.",
+						"<i>5: Flight.</i> The target gains a flying speed of 10 feet for 10 minutes.",
+						"<i>6: Luck.</i> The target's body is transformed as if by the {@spell alter self} spell. The target determines the transformation caused by the spell, the effects of which last for 10 minutes."
+					]
+				}
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"THW"
+			],
+			"bonus": [
+				{
+					"name": "Special Blend {@recharge 5}",
+					"entries": [
+						"Ethelmein blows his truly awful home blend of tobacco in the face of one creature that is breathing air within 5 feet of him. The target must succeed on a {@dc 13} Constitution saving throw or become {@condition poisoned} for 1 minute."
+					]
+				}
+			],
+			"conditionInflict": [
+				"poisoned"
+			],
+			"isNpc": true,
+			"environment": [
+				"urban"
+			],
+			"fluff": {
+				"entries": [
+					"Born and raised in Spuntondie but left early in his life. Teamed up with his nephew in Glasspin making smoking pipes. Didn't pay the bills so he took up a job in Meridian as a Dead Collector, but still collects fancy woods and commissions Jimby for new pipes."
+				]
+			}
+		},
+		{
+			"name": "Phantom Blade",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"note": "(any race)"
+			},
+			"source": "AelithCampaign",
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"NY",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item chain shirt|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d8 + 14",
+				"average": 45
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 14,
+			"int": 10,
+			"wis": 13,
+			"cha": 14,
+			"passive": 11,
+			"cr": "2",
+			"shortName": true,
+			"languages": [
+				"Common and one other language"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"skill": {
+				"deception": "+3",
+				"intimidation": "+3",
+				"religion": "+2"
+			},
+			"trait": [
+				{
+					"name": "Dark Devotion",
+					"entries": [
+						"The Phantom Blade has advantage on saving throws against being {@condition charmed} or {@condition frightened}."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Phantom Blade casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 12}, {@hit +4} to hit with spell attacks):"
+					],
+					"will": [
+						"5th-level {@spell booming blade|TCE}",
+						"{@spell frostbite|XGE}",
+						"{@spell sword burst|TCE}"
+					],
+					"daily": {
+						"2": [
+							"{@spell fear}",
+							"{@spell intellect fortress|TCE}"
+						],
+						"2e": [
+							"{@spell command}",
+							"{@spell hellish rebuke}",
+							"{@spell hold person}",
+							"{@spell invisibility}",
+							"{@spell witch bolt}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTagsSpell": [
+				"C",
+				"F",
+				"L",
+				"O",
+				"T"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The Phantom Blade makes a Longsword attack (one-handed) and a Dagger attack. Alternatively, they make two Dagger attacks."
+					]
+				},
+				{
+					"name": "Longsword",
+					"entries": [
+						"{@atk mw} {@hit +5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage, or 8 ({@damage 1d10 + 3}) slashing damage if used with two hands."
+					]
+				},
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit +4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"variant": [
+				{
+					"name": "Phantom Blade Heavy",
+					"entries": [
+						"The Soul Shepherds employ a wide range of warrior types, including those who are more on the tanky side who can smash skulls.",
+						"<b>Trait: <i>Reckless.</i></b> At the start of its turn, the Phantom Blade can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn.",
+						"<b>Action: <i>Maul (replaces Longsword).</i></b> {@atk mw} {@hit +5} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 3}) bludgeoning damage."
+					],
+					"type": "variant"
+				},
+				{
+					"name": "Phantom Blade Ranger",
+					"entries": [
+						"The Soul Shepherds employ a wide range of warrior types, including those who excel at scouting and attacking from afar.",
+						"<b>Trait: <i>Keen Hearing and Sight.</i></b> The Phantom Blade has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or sight.",
+						"<b>Actions:",
+						"<i>Multiattack (replaces Multiattack).</i></b>  The Phantom Blade makes three attacks that are any combination of Hand Crossbow and Dagger.",
+						"<b><i>Hand Crossbow (replaces Longsword).</i></b> {@atk rw} {@hit +4} to hit, range 30/120 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage.",
+						"<b>Bonus Action: <i>Cunning Action.</i></b> On each of its turns, the Phantom Blade can use a bonus action to take the Dash, Disengage, or Hide action."
+					],
+					"type": "variant"
+				}
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Reckless"
+			],
+			"fluff": {
+				"entries": [
+					"The grunts of the cultish organization known as the Soul Shepherds, Phantom Blades are hired or indoctrinated into working as muscle for their work."
+				]
+			},
+			"environment": [
+				"coastal",
+				"desert",
+				"underdark",
+				"urban"
+			]
+		},
+		{
+			"name": "Oh",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "plant",
+				"note": "(druid)"
+			},
+			"source": "AelithCampaign",
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d8 + 27",
+				"average": 67
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 10
+			},
+			"str": 14,
+			"dex": 12,
+			"con": 16,
+			"int": 13,
+			"wis": 18,
+			"cha": 9,
+			"passive": 14,
+			"cr": "5",
+			"shortName": true,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Druidic",
+				"Sylvan"
+			],
+			"languageTags": [
+				"C",
+				"DU",
+				"S"
+			],
+			"save": {
+				"wis": "+7"
+			},
+			"skill": {
+				"animal handling": "+10",
+				"medicine": "+7",
+				"nature": "+4",
+				"survival": "+7"
+			},
+			"vulnerable": [
+				"fire",
+				"lightning"
+			],
+			"resist": [
+				"bludgeoning",
+				"poison",
+				"radiant"
+			],
+			"trait": [
+				{
+					"name": "Speak with Beasts and Plants",
+					"entries": [
+						"Oh can communicate with beasts and plants as if they shared a language."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Oh is an 8th-level spellcaster. Their spellcasting ability is Wisdom (spell save {@dc 14}, {@hit +6} to hit with spell attacks). Oh has the following druid spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell control flames|XGE}",
+								"{@spell druidcraft}",
+								"{@spell mold earth|XGE}"
+							]
+						},
+						"1": {
+							"spells": [
+								"{@spell cure wounds}",
+								"{@spell detect poison and disease}",
+								"{@spell earth tremor|XGE}",
+								"{@spell entangle}"
+							],
+							"slots": 4
+						},
+						"2": {
+							"spells": [
+								"{@spell healing spirit|XGE}",
+								"{@spell lesser restoration}",
+								"{@spell locate animals or plants}",
+								"{@spell summon beast|TCE}"
+							],
+							"slots": 3
+						},
+						"3": {
+							"spells": [
+								"{@spell aura of vitality}",
+								"{@spell conjure animals}",
+								"{@spell plant growth}"
+							],
+							"slots": 3
+						},
+						"4": {
+							"spells": [
+								"{@spell control water}",
+								"{@spell guardian of nature|XGE}"
+							],
+							"slots": 2
+						}
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"CD"
+			],
+			"damageTagsSpell": [
+				"B",
+				"O"
+			],
+			"damageTags": [
+				"R",
+				"S"
+			],
+			"actionTags": [
+				"Shapechanger"
+			],
+			"action": [
+				{
+					"name": "Root Scythe",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}11 ({@damage 2d8 + 2}) slashing damage. Deals an extra 5 ({@damage 1d4 + 3}) radiant damage to evil-aligned creatures."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"bonus": [
+				{
+					"name": "Change Shape (2/Day)",
+					"entries": [
+						"Oh magically transforms into a Beast or an Elemental with a challenge rating of 4 or less and can remain in that form for up to 3 hours. Oh reverts to their true form if they die, fall {@condition unconscious}, or if its dismissed as a bonus action.",
+						"While in a new form, Oh's stat block is replaced by that of their new form, except Oh keeps their current hit points, their hit point maximum, this bonus action, their languages and ability to speak, and their Spellcasting trait.",
+						"The new form's attacks count as magical."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Bird Distraction",
+					"entries": [
+						"Oh launches one or more birds from the nest hitched onto their back, distracting the incoming foe. When a creature within 40 feet of Oh that Oh can see makes an attack, Oh can cause the targeted creature to reroll the {@dice d20} and use the lower roll.",
+						"Once this reaction causes a targeted creature's attack to miss, Oh cannot use it again on that same target until the end of combat."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"swamp"
+			],
+			"isNpc": true
+		},
+		{
+			"name": "Lumber Crane",
+			"size": [
+				"L"
+			],
+			"type": {
+				"type": {
+					"choose": []
+				},
+				"note": "Vehicle (20 ft. by 20 ft.)"
+			},
+			"source": "AelithCampaign",
+			"alignment": null,
+			"ac": [
+				15
+			],
+			"hp": {
+				"special": "75"
+			},
+			"speed": {
+				"walk": {
+					"number": 20,
+					"condition": "when on rails"
+				}
+			},
+			"str": 22,
+			"dex": 7,
+			"con": 15,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"passive": 0,
+			"vulnerable": [
+				"cold",
+				"lightning"
+			],
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"incapacitated",
+				"paralyzed",
+				"poisoned",
+				"prone",
+				"stunned",
+				"unconscious"
+			],
+			"trait": [
+				{
+					"name": "Construction Safety",
+					"entries": [
+						"Any creature inside and piloting this vehicle, which is a maximum of 1 at all times, gains half cover (+2 bonus to AC)."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Moving Lumber",
+					"entries": [
+						"The driver may use their bonus action to do the following (can do multiple of the following actions as part of a single bonus action):",
+						"&#x2022; Rotate the crane in any direction, 180 degrees around.",
+						"&#x2022; Attach or detach whatever large or smaller object the crane is holding."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Crane Smash",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 20 ft., one target. {@h}15 ({@damage 2d8 + 6}) bludgeoning damage or 19 ({@damage 3d8 + 6}) bludgeoning damage if a large object is being held by the crane."
+					]
+				}
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			]
+		},
+		{
+			"name": "Wildhaven Gnome",
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"gnome"
+				]
+			},
+			"source": "AelithCampaign",
+			"alignment": [
+				"NX",
+				"NY",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d6 + 10",
+				"average": 24
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 14,
+			"int": 14,
+			"wis": 12,
+			"cha": 10,
+			"passive": 13,
+			"cr": "1/2",
+			"shortName": "gnome",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"languages": [
+				"Common",
+				"Gnomish"
+			],
+			"languageTags": [
+				"C",
+				"G"
+			],
+			"skill": {
+				"stealth": "+5",
+				"survival": "+3",
+				"perception": "+3"
+			},
+			"traitTags": [
+				"Ambusher",
+				"Keen Senses"
+			],
+			"trait": [
+				{
+					"name": "Keen Hearing and Sight",
+					"entries": [
+						"The gnome has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or sight."
+					]
+				},
+				{
+					"name": "Ambusher",
+					"entries": [
+						"The gnome has advantage on attack rolls against any creature it has {@quickref Surprise|PHB|3|0|surprised}."
+					]
+				},
+				{
+					"name": "Gnome Cunning",
+					"entries": [
+						"The gnome has advantage on Intelligence, Wisdom, and Charisma saving throws against magic."
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting (2/Day)",
+					"headerEntries": [
+						"The gnome can innately cast <i>{@spell minor illusion}</i> (spell save {@dc 12}), requiring no material components. Its innate spellcasting ability is Intelligence."
+					],
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The gnome takes two melee attacks, or one ranged attack and one melee attack."
+					]
+				},
+				{
+					"name": "Light Crossbow",
+					"entries": [
+						"{@atk rw} {@hit +5} to hit, range 80/320 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit +5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Light Hammer",
+					"entries": [
+						"{@atk mw,rw} {@hit +3} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}3 ({@damage 1d4 + 1}) bludgeoning damage."
+					]
+				}
+			],
+			"miscTags": [
+				"RW",
+				"RNG",
+				"MW",
+				"THW"
+			]
+		},
+		{
+			"name": "Magnetic Mass",
+			"size": [
+				"L"
+			],
+			"type": "ooze",
+			"source": "AelithCampaign",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"special": "11"
+				}
+			],
+			"hp": {
+				"formula": "16d10 + 48",
+				"average": 136
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 16,
+			"int": 6,
+			"wis": 8,
+			"cha": 2,
+			"passive": 9,
+			"cr": "7",
+			"shortName": "mass",
+			"senses": [
+				"blindsight 60 ft. (blind beyond this radius)"
+			],
+			"senseTags": [
+				"B"
+			],
+			"save": {
+				"str": "+7",
+				"con": "+6"
+			},
+			"resist": [
+				"fire",
+				"slashing"
+			],
+			"immune": [
+				"acid",
+				"cold"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"prone"
+			],
+			"trait": [
+				{
+					"name": "Amorphous",
+					"entries": [
+						"The mass can move through a space as narrow as 1 inch wide without squeezing."
+					]
+				},
+				{
+					"name": "Magnetism",
+					"entries": [
+						"While on metal surface, the mass can climb walls and ceilings without the need for an ability check or reduced speed.",
+						"Any nonmagical melee weapon made of metal that hits the mass sticks to it. After the mass receives damage, the attacking creature must make a {@dc 15} Strength saving throw. On a failed save, the weapon is removed from the attacking creature's grasp and is absorbed into the mass.",
+						"Additionally, any creature wearing nonmagical metal armor who enters within or starts its turn within melee range of the mass must make a {@dc 15} Strength saving throw or be pulled 5 feet toward the mass.",
+						"Any of this mass's effects that would cause the target to enter the mass's space, the creature is not moved but is {@condition grappled}."
+					]
+				}
+			],
+			"traitTags": [
+				"Amorphous"
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The mass makes two attacks: Spiked Pseudopod and Repel."
+					]
+				},
+				{
+					"name": "Spiked Pseudopod",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 15 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage plus 7 ({@damage 2d6}) acid damage. If the target is wearing nonmagical metal armor, it must make a {@dc 15} Strength saving throw or be pulled 5 feet toward the mass."
+					]
+				},
+				{
+					"name": "Repel",
+					"entries": [
+						"{@atk rw} {@hit 3} to hit, range 30/60 ft., one target. {@h}7 ({@damage 2d6}) acid damage plus the damage die roll and type of the weapon launched, or 3 ({@damage 1d6}) bludgeoning damage for other objects. The mass launches an absorbed melee weapon or object at a target within range."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW",
+				"AOE"
+			],
+			"bonus": [
+				{
+					"name": "Magnetic Pull",
+					"entries": [
+						"On each of its turns, the mass can pull itself toward a metal surface or object within a 40-foot-radius of it that it can see, provided the surface or object weighs more than the mass and its contents.",
+						"This ability does not count toward the mass's movement that turn and does not provoke opportunity attacks."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Charged Polarity",
+					"entries": [
+						"When the mass is subjected to lightning damage, it is forced to eject all absorbed metal objects, both small and large, out from its center. Each creature in a 30-foot-radius sphere centered on the mass must make a {@dc 11} Dexterity saving throw. A target takes 4 ({@damage 1d8}) bludgeoning damage per 5 lbs of metal within the mass (rounded up) on a failed save, or half as much damage on a successful one.",
+						"Additionally, if the mass is subjected to lightning damage and has no metal objects within it, the Magnetism, Repel, and Magnetic Pull abilities no longer work."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"underdark",
+				"urban"
+			]
+		},
+		{
+			"name": "Kinoko",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "plant",
+				"tags": [
+					"myconid adult"
+				]
+			},
+			"source": "AelithCampaign",
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d8 + 21",
+				"average": 52
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 14,
+			"dex": 11,
+			"con": 16,
+			"int": 7,
+			"wis": 13,
+			"cha": 8,
+			"passive": 13,
+			"cr": "1",
+			"shortName": true,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languages": [
+				"understands Common but can't speak"
+			],
+			"languageTags": [
+				"C",
+				"CS"
+			],
+			"skill": {
+				"nature": "+2",
+				"survival": "+3",
+				"perception": "+3"
+			},
+			"resist": [
+				"poison"
+			],
+			"trait": [
+				{
+					"name": "Distress Spores",
+					"entries": [
+						"When Kinoko takes damage, all other myconids within 240 feet of it can sense its pain."
+					]
+				},
+				{
+					"name": "Sun Sickness",
+					"entries": [
+						"While in sunlight, Kinoko has disadvantage on attack rolls, ability checks, and saving throws. Kinoko dies if they spend more than 1 hour in direct sunlight."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Myconid Fist",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d4 + 2}) bludgeoning damage, plus 5 ({@damage 2d4}) poison damage."
+					]
+				},
+				{
+					"name": "Zurkhwood Handaxe",
+					"entries": [
+						"{@atk mw,rw} {@hit +4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage. On a hit, if the target creature is not a plant, they must make a {@dc 14} Constitution saving throw. On a fail, they become {@condition poisoned} for {@dice 1d4} rounds."
+					]
+				},
+				{
+					"name": "Dazing Spores (3/Day)",
+					"entries": [
+						"Kinoko ejects spores at one creature it can see within 5 feet of it. The target must succeed on a {@dc 13} Constitution saving throw or be dazed for 1 minute (as if affected by the {@spell daze|AelCamp} spell). The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Rapport Spores",
+					"entries": [
+						"A 20-foot radius of spores extends from Kinoko. These spores can go around corners and affect only creatures with an Intelligence of 2 or higher that aren't undead, constructs, or elementals. Affected creatures can communicate telepathically with one another while they are within 30 feet of each other. The effect lasts for 1 hour."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"I",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW",
+				"AOE"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"tokenUrl": "https://5e.tools/img/MM/Myconid%20Adult.png",
+			"fluff": {
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/bestiary/MM/Myconids.jpg"
+						}
+					}
+				]
+			},
+			"environment": [
+				"forest",
+				"underwater"
+			],
+			"isNpc": true
+		}
+	],
+	"condition": [
+		{
+			"name": "Dazed",
+			"source": "AelithCampaign",
+			"page": 0,
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"A dazed creature cannot take reactions",
+						"The creature has disadvantage on ability checks and Dexterity saving throws.",
+						"Melee attacks targeting the creature have advantage, and attacks made by the dazed creature have disadvantage.",
+						"When the creature attempts to cast a spell other than a cantrip they must succeed on a DC 13 Constitution saving throw or the spell fizzles out, and the spell slot is wasted.",
+						"When you move up to your walking speed you must succeed on DC 13 Dexterity saving throw or fall {@condition prone|PHB}."
+					]
+				}
+			]
+		}
+	]
+}

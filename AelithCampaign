@@ -1192,5 +1192,36 @@
 				}
 			]
 		}
+	],
+	"itemType": [
+		{
+			"abbreviation": "DR",
+			"source": "AelithCampaign",
+			"name": "drug",
+			"page": 0,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Drug",
+					"entries": [
+						"Drugs alter one's body and mind, granting useful enhancements while also decaying the psyche."
+					]
+				}
+			]
+		}
+	],
+	"item": [
+		{
+			"name": "Devilweed",
+			"source": "AelithCampaign",
+			"page": 0,
+			"type": "DR",
+			"rarity": "common",
+			"entries": [
+				"The sturdy leaves of the Riverfern plant are dried and rolled for smoking, not dissimilar to tobacco.",
+				"{@b{@i Side Effect.}} Causes drowsyness and indolence.",
+				"{@b{@i Effect.}} For the duration, the user has disadvantage on Intelligence and Wisdom skill checks and saving throws and has advantage on Strength and Constitution skill checks and saving throws."
+			]
+		}
 	]
 }

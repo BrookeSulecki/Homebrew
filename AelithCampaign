@@ -11,17 +11,6 @@
 				],
 				"convertedBy": [],
 				"color": "#e821cd"
-			},
-			{
-				"json": "AelithCampaign",
-				"abbreviation": "AelCamp",
-				"full": "Aelith Campaign",
-				"authors": [
-					"BrookeSulecki"
-				],
-				"version": "1.0",
-				"url": "",
-				"targetSchema": "1.0"
 			}
 		],
 		"dateAdded": 0,

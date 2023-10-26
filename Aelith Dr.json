@@ -7,7 +7,7 @@
 				"full": "Drugs of Aelith",
 				"url": "https://homebrewery.naturalcrit.com/share/ax2cmW00SHbk",
 				"authors": [
-					"BrookeSulecki"
+					"Brooke Sulecki"
 				],
 				"convertedBy": [],
 				"version": "2.0",
@@ -24,7 +24,6 @@
 			"page": 3,
 			"type": "G",
 			"rarity": "none",
-			"tier": "minor",
             "poison": true,
 			"poisonTypes": [
 				"inhaled"

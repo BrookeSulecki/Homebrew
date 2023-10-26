@@ -1,0 +1,49 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "AelithDrugs",
+				"abbreviation": "AelDrug",
+				"full": "Drugs of Aelith",
+				"url": "",
+				"authors": [
+					"BrookeSulecki"
+				],
+				"convertedBy": [],
+				"color": "#57034b"
+			}
+		],
+		"dateAdded": 0,
+		"dateLastModified": 0
+	},
+	"item": [
+		{
+			"name": "Devilweed",
+			"source": "AelithDrugs",
+			"page": 3,
+			"type": "G",
+			"rarity": "none",
+			"tier": "minor",
+            "poison": true,
+			"poisonTypes": "inhaled",
+			"value": 600,
+			"entries": [
+                "The sturdy leaves of the Riverfern plant are dried and rolled for smoking, not dissimilar to tobacco.",
+                {
+                    "type": "entries",
+                    "name": "Side Effect",
+                    "entries": [
+                        "Causes drowsyness and indolence."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Effect",
+                    "entries": [
+                        "For the duration, the user has disadvantage on Intelligence and Wisdom skill checks and saving throws and has advantage on Strength and Constitution skill checks and saving throws."
+                    ]
+                }
+            ]
+		}
+	]
+}

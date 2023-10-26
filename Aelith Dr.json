@@ -5,12 +5,13 @@
 				"json": "AelithDrugs",
 				"abbreviation": "AelDrug",
 				"full": "Drugs of Aelith",
-				"url": "",
+				"url": "https://homebrewery.naturalcrit.com/share/ax2cmW00SHbk",
 				"authors": [
 					"BrookeSulecki"
 				],
 				"convertedBy": [],
-				"color": "#57034b"
+				"version": "2.0",
+				"color": "57034b"
 			}
 		],
 		"dateAdded": 0,
@@ -25,7 +26,9 @@
 			"rarity": "none",
 			"tier": "minor",
             "poison": true,
-			"poisonTypes": "inhaled",
+			"poisonTypes": [
+				"inhaled"
+			],
 			"value": 600,
 			"weight": 0.1,
 			"entries": [
@@ -42,6 +45,34 @@
                     "name": "Effect",
                     "entries": [
                         "For the duration, the user has disadvantage on Intelligence and Wisdom skill checks and saving throws and has advantage on Strength and Constitution skill checks and saving throws."
+                    ]
+                },
+				{
+                    "type": "entries",
+                    "name": "Duration",
+                    "entries": [
+                        "5 hours (or long rest)"
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "DC",
+                    "entries": [
+                        "8"
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Tools",
+                    "entries": [
+                        "--"
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Ingredients",
+                    "entries": [
+                        "Riverfern leaves (found alongside streams), flame"
                     ]
                 }
             ]
